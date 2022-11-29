@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Tables</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-spacing: 0;
+            /* border-collapse: collapse; */
+        }
+
+        th {
+            text-align: left;
+            background-color: antiquewhite;
+            border: 2px solid black;
+        }
+
+        tr {
+            /* border: 2px solid coral; */
+        }
+
+        td {
+            border: 2px solid black;
+        }
+
+        #last-cell {
+            background-color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>Registro di classe</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Tel</th>
+                <th>Indirizzo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>128323</td>
+                <td>Stefano</td>
+                <td>Miceli</td>
+                <td>1238991832</td>
+                <td rowspan="3">Via tal dei tali 54</td>
+            </tr>
+            <tr>
+                <td>128323</td>
+                <td>Stefano</td>
+                <td>Miceli</td>
+                <td>1238991832</td>
+
+            </tr>
+            <tr>
+                <td>128321123</td>
+                <td>Stefano</td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1669649266202-e324411c3476?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        alt="starry night" width="150">
+                </td>
+                <td><a href="#">1238991832</a></td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="last-cell" colspan="5" rowspan="3">Epicode School</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+
+</html>

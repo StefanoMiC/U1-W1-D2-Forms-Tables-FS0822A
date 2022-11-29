@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementi multimediali</title>
+</head>
+
+<body>
+
+    <!-- AUDIO -->
+    <!-- file singolo proposto -->
+    <audio src="./webinar.mp3" controls autoplay="on" loop></audio>
+
+    <!-- file multipli. solo uno verrà eseguito, il preferito dal browser/sistema operativo -->
+    <audio controls>
+        <source src="./webinar.mp3" type="audio/mpeg">
+        <source src="./webinar.ogg" type="audio/ogg">
+
+        Attenzione il tuo browser non supporta i file audio forniti
+        <!-- Testo mostrato solo nell'eventualità che il browser sia vecchio e non supporti il formato -->
+    </audio>
+
+    <!-- VIDEO -->
+    <header>
+        <video src="./assets/video/file_example_OGG_1920_13_3mg.ogg" controls width="480"
+            poster="./assets/imgs/earth-hi.jpg"></video>
+    </header>
+    <main>
+        <video src="./assets/video/file_example_OGG_480_1_7mg.ogg" controls width="480"
+            poster="./assets/imgs/earth-sm.jpg"></video>
+    </main>
+
+    <hr>
+    <!-- <picture>
+        <source media="(min-width: 1325px)" srcset="./assets/imgs/earth-hi.jpg">
+        <source media="(min-width: 700px)" srcset="./assets/imgs/earth-md.jpg">
+
+        <img src="./assets/imgs/earth-sm.jpg" width="100%" alt="earth from space">
+    </picture> -->
+    <!-- <img src="./assets/imgs/earth-hi.jpg" width="100%" alt="earth from space"> -->
+
+    <!-- IFRAME -->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AYy8RFcN_ds" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22399.978624763884!2d9.1848704!3d45.429555199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c48ba9983bd9%3A0xb34cc6e38274a267!2sAl%20Garghet!5e0!3m2!1sit!2sit!4v1669721607244!5m2!1sit!2sit"
+        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+</body>
+
+</html>
